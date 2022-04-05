@@ -1,0 +1,10 @@
+11:49:08 **** Incremental Build of configuration Debug for project little_rescuer ****
+make -j12 all 
+arm-none-eabi-size   little_rescuer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36316	    132	   3032	  39480	   9a38	little_rescuer.elf
+Finished building: default.size.stdout
+ 
+
+11:49:09 Build Finished. 0 errors, 0 warnings. (took 300ms)
+

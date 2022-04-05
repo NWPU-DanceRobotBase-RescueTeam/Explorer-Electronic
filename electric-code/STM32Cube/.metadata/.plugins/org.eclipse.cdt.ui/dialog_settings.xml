@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.eclipse.cdt.uiformatter_page.white_space.c_view.inner" value="125"/>
+	<item key="org.eclipse.cdt.uiformatter_page.white_space_tab_page.node" value="0"/>
+	<item key="org.eclipse.cdt.uiformatter_page.line_wrapping_tab_page.last_category_index" value="8"/>
+	<item key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_width" value="1359"/>
+	<item key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_height" value="1030"/>
+	<item key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_x" value="365"/>
+	<item key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_y" value="0"/>
+	<item key="org.eclipse.cdt.ui.codeformatter.create_profile_dialog.open_edit" value="true"/>
+	<item key="org.eclipse.cdt.ui.codeformatter.savepath.loadpath" value="D:"/>
+	<item key="ProjectSelectionDialog.show_all" value="true"/>
+	<item key="formatter_page.modify_dialog_tab_page.last_focus_index" value="7"/>
+	<item key="org.eclipse.cdt.uiformatter_pagemodify_dialog.last_focus" value="5"/>
+	<item key="org.eclipse.cdt.uiformatter_page.white_space.c_view.option" value="54"/>
+	<item key="org.eclipse.cdt.ui.codeformatter.savepath.savepath" value="D:"/>
+	<item key="org.eclipse.cdt.ui.formatter_page.show_invisible_characters" value="false"/>
+	<item key="org.eclipse.cdt.ui.codeformatter.line_wrapping_tab_page.preview_line_width" value="120"/>
+	<item key="LastUsedHeaderTemplate" value="Default C header template"/>
+	<item key="LastUsedSourceTemplate" value="Default C source template"/>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="PDOMSearchPage">
+		<item key="caseSensitive" value="false"/>
+		<item key="searchFlags" value="227191"/>
+		<list key="previousPatterns">
+			<item value="vParTestInitialise"/>
+			<item value="CAN_Tx_Mailboxes"/>
+			<item value="s32"/>
+			<item value="s16"/>
+			<item value="u16"/>
+			<item value="u8"/>
+			<item value="CAN1_Send_Msg"/>
+			<item value="CAN2_Send_Msg"/>
+			<item value="HAL_ADCEx_Calibration_Start"/>
+			<item value="HAL_ADC_Start_DMA"/>
+			<item value="fflush"/>
+			<item value="PUTCHAR_PROTOTYPE"/>
+			<item value="HAL_InitTick"/>
+			<item value="hal_inittick"/>
+			<item value="SysTick"/>
+		</list>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item key="size.width" value="809"/>
+		<item key="size.height" value="235"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
+		<item key="DIALOG_X_ORIGIN" value="738"/>
+		<item key="DIALOG_Y_ORIGIN" value="141"/>
+		<item key="DIALOG_WIDTH" value="462"/>
+		<item key="DIALOG_HEIGHT" value="575"/>
+		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
+	</section>
+	<section name="RenameInformationPopup">
+		<item key="snap_position" value="2"/>
+	</section>
+	<section name="CRenameRefactoringInputPage">
+		<item key="scope" value="3"/>
+		<item key="workingset" value=""/>
+		<item key="references_inv" value="false"/>
+		<item key="comment" value="false"/>
+		<item key="macroDefinition" value="false"/>
+		<item key="exhausiveFileSearch" value="false"/>
+	</section>
+</section>

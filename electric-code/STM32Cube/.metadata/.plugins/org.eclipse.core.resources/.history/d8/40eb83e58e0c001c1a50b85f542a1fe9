@@ -1,0 +1,216 @@
+/* USER CODE BEGIN Header */
+/**
+ ******************************************************************************
+ * File Name          : freertos.c
+ * Description        : Code for freertos applications
+ ******************************************************************************
+ * @attention
+ *
+ * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
+ * All rights reserved.</center></h2>
+ *
+ * This software component is licensed by ST under Ultimate Liberty license
+ * SLA0044, the "License"; You may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at:
+ *                             www.st.com/SLA0044
+ *
+ ******************************************************************************
+ */
+/* USER CODE END Header */
+
+/* Includes ------------------------------------------------------------------*/
+#include "FreeRTOS.h"
+#include "task.h"
+#include "main.h"
+#include "cmsis_os.h"
+#include <stdio.h>
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+
+/* USER CODE END Includes */
+
+/* Private typedef -----------------------------------------------------------*/
+typedef StaticTask_t osStaticThreadDef_t;
+/* USER CODE BEGIN PTD */
+
+/* USER CODE END PTD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+/* USER CODE BEGIN Variables */
+
+/* USER CODE END Variables */
+/* Definitions for defaultTask */
+osThreadId_t defaultTaskHandle;
+const osThreadAttr_t defaultTask_attributes = { .name = "defaultTask", .stack_size = 128 * 4, .priority = (osPriority_t) osPriorityLow, };
+/* Definitions for Task_LED1 */
+osThreadId_t Task_LED1Handle;
+uint32_t Task_LED1Buffer[128];
+osStaticThreadDef_t Task_LED1ControlBlock;
+const osThreadAttr_t Task_LED1_attributes = { .name = "Task_LED1", .cb_mem = &Task_LED1ControlBlock, .cb_size = sizeof(Task_LED1ControlBlock), .stack_mem = &Task_LED1Buffer[0], .stack_size = sizeof(Task_LED1Buffer), .priority = (osPriority_t) osPriorityNormal, };
+/* Definitions for Task_LED2 */
+osThreadId_t Task_LED2Handle;
+uint32_t Task_LED2Buffer[128];
+osStaticThreadDef_t Task_LED2ControlBlock;
+const osThreadAttr_t Task_LED2_attributes = { .name = "Task_LED2", .cb_mem = &Task_LED2ControlBlock, .cb_size = sizeof(Task_LED2ControlBlock), .stack_mem = &Task_LED2Buffer[0], .stack_size = sizeof(Task_LED2Buffer), .priority = (osPriority_t) osPriorityBelowNormal, };
+/* Definitions for Task_usart */
+osThreadId_t Task_usartHandle;
+uint32_t Task_usartBuffer[128];
+osStaticThreadDef_t Task_usartControlBlock;
+const osThreadAttr_t Task_usart_attributes = { .name = "Task_usart", .cb_mem = &Task_usartControlBlock, .cb_size = sizeof(Task_usartControlBlock), .stack_mem = &Task_usartBuffer[0], .stack_size = sizeof(Task_usartBuffer), .priority = (osPriority_t) osPriorityAboveNormal, };
+
+/* Private function prototypes -----------------------------------------------*/
+/* USER CODE BEGIN FunctionPrototypes */
+
+/* USER CODE END FunctionPrototypes */
+
+void StartDefaultTask(void *argument);
+void StartTask_LED1(void *argument);
+void StartTask_LED2(void *argument);
+void StartTask_usart(void *argument);
+
+void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
+
+/**
+ * @brief  FreeRTOS initialization
+ * @param  None
+ * @retval None
+ */
+void MX_FREERTOS_Init(void)
+{
+	/* USER CODE BEGIN Init */
+
+	/* USER CODE END Init */
+
+	/* USER CODE BEGIN RTOS_MUTEX */
+	/* add mutexes, ... */
+	/* USER CODE END RTOS_MUTEX */
+
+	/* USER CODE BEGIN RTOS_SEMAPHORES */
+	/* add semaphores, ... */
+	/* USER CODE END RTOS_SEMAPHORES */
+
+	/* USER CODE BEGIN RTOS_TIMERS */
+	/* start timers, add new ones, ... */
+	/* USER CODE END RTOS_TIMERS */
+
+	/* USER CODE BEGIN RTOS_QUEUES */
+	/* add queues, ... */
+	/* USER CODE END RTOS_QUEUES */
+
+	/* Create the thread(s) */
+	/* creation of defaultTask */
+	defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
+
+	/* creation of Task_LED1 */
+	Task_LED1Handle = osThreadNew(StartTask_LED1, NULL, &Task_LED1_attributes);
+
+	/* creation of Task_LED2 */
+	Task_LED2Handle = osThreadNew(StartTask_LED2, NULL, &Task_LED2_attributes);
+
+	/* creation of Task_usart */
+	Task_usartHandle = osThreadNew(StartTask_usart, NULL, &Task_usart_attributes);
+
+	/* USER CODE BEGIN RTOS_THREADS */
+	/* add threads, ... */
+	/* USER CODE END RTOS_THREADS */
+
+	/* USER CODE BEGIN RTOS_EVENTS */
+	/* add events, ... */
+	/* USER CODE END RTOS_EVENTS */
+
+}
+
+/* USER CODE BEGIN Header_StartDefaultTask */
+/**
+ * @brief  Function implementing the defaultTask thread.
+ * @param  argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_StartDefaultTask */
+void StartDefaultTask(void *argument)
+{
+	/* USER CODE BEGIN StartDefaultTask */
+	/* Infinite loop */
+//  for(;;)
+//  {
+//    osDelay(1);
+//  }
+	/* USER CODE END StartDefaultTask */
+}
+
+/* USER CODE BEGIN Header_StartTask_LED1 */
+/**
+ * @brief Function implementing the Task_LED1 thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_StartTask_LED1 */
+void StartTask_LED1(void *argument)
+{
+	/* USER CODE BEGIN StartTask_LED1 */
+	/* Infinite loop */
+	for (;;)
+	{
+		HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+		osDelay(1000);
+	}
+	/* USER CODE END StartTask_LED1 */
+}
+
+/* USER CODE BEGIN Header_StartTask_LED2 */
+/**
+ * @brief Function implementing the Task_LED2 thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_StartTask_LED2 */
+void StartTask_LED2(void *argument)
+{
+	/* USER CODE BEGIN StartTask_LED2 */
+	/* Infinite loop */
+	for (;;)
+	{
+		HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
+		osDelay(500);
+	}
+	/* USER CODE END StartTask_LED2 */
+}
+
+/* USER CODE BEGIN Header_StartTask_usart */
+/**
+ * @brief Function implementing the Task_usart thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_StartTask_usart */
+void StartTask_usart(void *argument)
+{
+	/* USER CODE BEGIN StartTask_usart */
+	/* Infinite loop */
+	static float num = 0.0;
+	for (;;)
+	{
+		num += 0.01f;
+		printf("%.2f\r\n", num);
+		osDelay(1000);
+	}
+	/* USER CODE END StartTask_usart */
+}
+
+/* Private application code --------------------------------------------------*/
+/* USER CODE BEGIN Application */
+
+/* USER CODE END Application */
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

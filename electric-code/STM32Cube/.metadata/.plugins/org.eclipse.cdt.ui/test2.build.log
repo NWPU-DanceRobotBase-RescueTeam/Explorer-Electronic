@@ -1,0 +1,20 @@
+16:48:33 **** Incremental Build of configuration Debug for project test2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test2.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Rescuer\STM32Cube\test2\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test2.elf
+ 
+arm-none-eabi-objdump -h -S  test2.elf  > "test2.list"
+arm-none-eabi-objcopy  -O binary  test2.elf  "test2.bin"
+arm-none-eabi-size   test2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33432	    488	   1944	  35864	   8c18	test2.elf
+Finished building: default.size.stdout
+Finished building: test2.list
+Finished building: test2.bin
+ 
+ 
+ 
+
+16:48:37 Build Finished. 0 errors, 0 warnings. (took 3s.827ms)
+

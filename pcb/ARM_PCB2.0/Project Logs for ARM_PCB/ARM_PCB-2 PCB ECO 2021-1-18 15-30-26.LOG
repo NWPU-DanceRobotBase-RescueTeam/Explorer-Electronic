@@ -1,0 +1,122 @@
+Added Component: Designator=P11(KF301-5.0-2P)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P16(KF301-5.0-2P)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U3(SOT-223)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U5(LQFP64)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U6(SO8_M)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U7(SO8_M)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=ADC_CH2 Pin=U5-16
+Added Net: Name=ADC_CH2
+Added Pin To Net: NetName=AUX Pin=U5-61
+Added Net: Name=AUX
+Added Pin To Net: NetName=BOOT0 Pin=U5-60
+Added Net: Name=BOOT0
+Added Pin To Net: NetName=BOOT1 Pin=U5-28
+Added Net: Name=BOOT1
+Added Pin To Net: NetName=CAN1_N Pin=U6-6
+Added Net: Name=CAN1_N
+Added Pin To Net: NetName=CAN1_P Pin=U6-7
+Added Net: Name=CAN1_P
+Added Pin To Net: NetName=CAN1_RX Pin=U5-44
+Added Pin To Net: NetName=CAN1_RX Pin=U6-4
+Added Net: Name=CAN1_RX
+Added Pin To Net: NetName=CAN1_TX Pin=U5-45
+Added Pin To Net: NetName=CAN1_TX Pin=U6-1
+Added Net: Name=CAN1_TX
+Added Pin To Net: NetName=CAN2_N Pin=U7-6
+Added Net: Name=CAN2_N
+Added Pin To Net: NetName=CAN2_P Pin=U7-7
+Added Net: Name=CAN2_P
+Added Pin To Net: NetName=CAN2_RX Pin=U5-33
+Added Pin To Net: NetName=CAN2_RX Pin=U7-4
+Added Net: Name=CAN2_RX
+Added Pin To Net: NetName=CAN2_TX Pin=U5-34
+Added Pin To Net: NetName=CAN2_TX Pin=U7-1
+Added Net: Name=CAN2_TX
+Added Net: Name=CGND
+Added Pin To Net: NetName=GND Pin=P16-1
+Added Pin To Net: NetName=GND Pin=U3-1
+Added Pin To Net: NetName=GND Pin=U5-12
+Added Pin To Net: NetName=GND Pin=U5-18
+Added Pin To Net: NetName=GND Pin=U5-63
+Added Pin To Net: NetName=GND Pin=U6-2
+Added Pin To Net: NetName=GND Pin=U6-8
+Added Pin To Net: NetName=GND Pin=U7-2
+Added Pin To Net: NetName=GND Pin=U7-8
+Added Net: Name=GND
+Added Pin To Net: NetName=JTCK Pin=U5-49
+Added Net: Name=JTCK
+Added Pin To Net: NetName=JTMS Pin=U5-46
+Added Net: Name=JTMS
+Added Pin To Net: NetName=MD0 Pin=U5-56
+Added Net: Name=MD0
+Added Pin To Net: NetName=MD1 Pin=U5-57
+Added Net: Name=MD1
+Added Net: Name=NetAS1_1
+Added Net: Name=NetAS1_2
+Added Net: Name=NetAS1_6
+Added Net: Name=NetC3_1
+Added Pin To Net: NetName=NetC6_1 Pin=U3-2
+Added Pin To Net: NetName=NetC6_1 Pin=U3-2
+Added Net: Name=NetC6_1
+Added Pin To Net: NetName=NetC9_1 Pin=U5-13
+Added Net: Name=NetC9_1
+Added Pin To Net: NetName=NetC10_2 Pin=U5-47
+Added Net: Name=NetC10_2
+Added Pin To Net: NetName=NetC11_2 Pin=U5-31
+Added Net: Name=NetC11_2
+Added Pin To Net: NetName=NetC12_2 Pin=U5-1
+Added Pin To Net: NetName=NetC12_2 Pin=U5-19
+Added Pin To Net: NetName=NetC12_2 Pin=U5-32
+Added Pin To Net: NetName=NetC12_2 Pin=U5-48
+Added Pin To Net: NetName=NetC12_2 Pin=U5-64
+Added Net: Name=NetC12_2
+Added Net: Name=NetL2_2
+Added Net: Name=NetLED1_1
+Added Net: Name=NetLED2_1
+Added Net: Name=NetP4_1
+Added Pin To Net: NetName=OSC_IN Pin=U5-5
+Added Net: Name=OSC_IN
+Added Pin To Net: NetName=OSC_OUT Pin=U5-6
+Added Net: Name=OSC_OUT
+Added Pin To Net: NetName=PB0 Pin=U5-26
+Added Net: Name=PB0
+Added Pin To Net: NetName=PB1 Pin=U5-27
+Added Net: Name=PB1
+Added Pin To Net: NetName=PB3 Pin=U5-55
+Added Net: Name=PB3
+Added Pin To Net: NetName=PB6 Pin=U5-58
+Added Net: Name=PB6
+Added Pin To Net: NetName=PB7 Pin=U5-59
+Added Net: Name=PB7
+Added Pin To Net: NetName=PB9 Pin=U5-62
+Added Net: Name=PB9
+Added Pin To Net: NetName=PC0 Pin=U5-8
+Added Net: Name=PC0
+Added Pin To Net: NetName=PGND Pin=P11-2
+Added Net: Name=PGND
+Added Pin To Net: NetName=RESET Pin=U5-7
+Added Net: Name=RESET
+Added Pin To Net: NetName=U1_RX Pin=U5-43
+Added Net: Name=U1_RX
+Added Pin To Net: NetName=U1_TX Pin=U5-42
+Added Net: Name=U1_TX
+Added Net: Name=VCC_3.3
+Added Net: Name=VCC_5O
+Added Pin To Net: NetName=VCC_5 Pin=U3-3
+Added Pin To Net: NetName=VCC_5 Pin=U6-3
+Added Pin To Net: NetName=VCC_5 Pin=U7-3
+Added Net: Name=VCC_5
+Added Pin To Net: NetName=VCC_7.4 Pin=P16-2
+Added Net: Name=VCC_7.4
+Added Pin To Net: NetName=VCC_24O Pin=P11-1
+Added Net: Name=VCC_24O
+Added Net: Name=VCC_24
+Added Class: Name=ARM_PCB
+Added Differential Pair: Name=CAN1
+Added Differential Pair: Name=CAN2

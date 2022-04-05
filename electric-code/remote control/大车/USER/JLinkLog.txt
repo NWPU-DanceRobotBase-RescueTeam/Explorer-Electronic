@@ -1,0 +1,43 @@
+
+TB668 000:570 SEGGER J-Link V4.96d Log File (0001ms, 0317ms total)
+TB668 000:570 DLL Compiled: Jan 29 2015 11:45:37 (0001ms, 0317ms total)
+TB668 000:570 Logging started @ 2022-03-12 20:06 (0001ms, 0317ms total)
+TB668 000:571 JLINK_SetWarnOutHandler(...) (0000ms, 0317ms total)
+TB668 000:571 JLINK_OpenEx(...)
+Firmware: J-Link V9 compiled May  7 2021 16:26:12
+Hardware: V9.40
+S/N: 59400616
+Feature(s): RDI, FlashBP, FlashDL, JFlash, GDB  returns O.K. (0314ms, 0631ms total)
+TB668 000:885 JLINK_SetErrorOutHandler(...) (0000ms, 0631ms total)
+TB668 000:885 JLINK_ExecCommand("ProjectFile = "F:\dance base\electric code\remote control\´ó³µ\USER\JLinkSettings.ini"", ...)Device "UNSPECIFIED" selected.  returns 0x00 (0002ms, 0633ms total)
+TB668 000:887 JLINK_ExecCommand("Device = STM32F405RG", ...)Device "STM32F405RG" selected.  returns 0x00 (0000ms, 0633ms total)
+TB668 000:887 JLINK_ExecCommand("DisableConnectionTimeout", ...)  returns 0x01 (0000ms, 0633ms total)
+TB668 000:887 JLINK_GetHardwareVersion()  returns 0x16F30 (0000ms, 0633ms total)
+TB668 000:887 JLINK_GetDLLVersion()  returns 49604 (0000ms, 0633ms total)
+TB668 000:887 JLINK_GetFirmwareString(...) (0000ms, 0633ms total)
+TB668 000:887 JLINK_GetDLLVersion()  returns 49604 (0000ms, 0633ms total)
+TB668 000:887 JLINK_GetCompileDateTime() (0000ms, 0633ms total)
+TB668 000:887 JLINK_GetFirmwareString(...) (0000ms, 0633ms total)
+TB668 000:887 JLINK_GetHardwareVersion()  returns 0x16F30 (0000ms, 0633ms total)
+TB668 000:887 JLINK_TIF_Select(JLINKARM_TIF_SWD)  returns 0x00 (0001ms, 0634ms total)
+TB668 000:888 JLINK_SetSpeed(500) (0000ms, 0634ms total)
+TB668 000:888 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)  returns JLINKARM_RESET_TYPE_NORMAL (0000ms, 0634ms total)
+TB668 000:888 JLINK_Reset() >0x108 TIF>Found SWD-DP with ID 0x2BA01477 >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x108 TIF>Found SWD-DP with ID 0x2BA01477 >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF>
+ >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF>Found Cortex-M4 r0p1, Little endian. -- CPU_WriteMem(4 bytes @ 0xE0002000) -- CPU_ReadMem(4 bytes @ 0xE000EDF0) -- CPU_ReadMem(4 bytes @ 0xE0002000)
+FPUnit: 6 code (BP) slots and 2 literal slots -- CPU_ReadMem(4 bytes @ 0xE000EDFC) -- CPU_ReadMem(4 bytes @ 0xE0001000) -- CPU_WriteMem(4 bytes @ 0xE0001000) -- CPU_ReadMem(4 bytes @ 0xE000ED88) -- CPU_WriteMem(4 bytes @ 0xE000ED88) -- CPU_ReadMem(4 bytes @ 0xE000ED88) -- CPU_WriteMem(4 bytes @ 0xE000ED88) -- CPU_ReadMem(4 bytes @ 0xE00FF010)TPIU fitted. -- CPU_ReadMem(4 bytes @ 0xE00FF014)ETM fitted. -- CPU_ReadMem(4 bytes @ 0xE00FF018) -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000EDF0)
+ -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000EDFC) >0x35 TIF> -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000ED0C) -- CPU is running -- CPU_ReadMem(4 bytes @ 0xE000EDF0) -- CPU is running -- CPU_ReadMem(4 bytes @ 0xE000EDF0) -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000EDF0) -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000EDFC) -- CPU is running -- CPU_ReadMem(4 bytes @ 0xE000EDF0) -- CPU_WriteMem(4 bytes @ 0xE0002000) -- CPU_ReadMem(4 bytes @ 0xE000EDFC)
+ -- CPU_ReadMem(4 bytes @ 0xE0001000) (0056ms, 0690ms total)
+TB668 000:944 JLINK_GetId() >0x0D TIF> >0x21 TIF>  returns 0x2BA01477 (0001ms, 0691ms total)
+TB668 000:948 JLINK_GetFirmwareString(...) (0000ms, 0691ms total)
+TB668 010:466 JLINK_SWO_Control(JLINKARM_SWO_CMD_GET_SPEED_INFO, ...)  returns 0x00 (0001ms, 0692ms total)
+TB668 010:467 JLINK_SWO_Control(JLINKARM_SWO_CMD_GET_SPEED_INFO, ...)  returns 0x00 (0000ms, 0692ms total)
+TB668 010:467 JLINK_SWO_Control(JLINKARM_SWO_CMD_GET_SPEED_INFO, ...)  returns 0x00 (0000ms, 0692ms total)
+TB558 010:467 
+  ***** Error: Connection to emulator lost! (13154ms, 13846ms total)
+TB558 010:467 
+  ***** Error: Connection to emulator lost! (15462ms, 16154ms total)
+TB558 010:467 
+  ***** Error: Connection to emulator lost! (18403ms, 19095ms total)
+TB668 308:821 JLINK_Close() (0000ms, 0692ms total)
+TB668 308:821  (0000ms, 0692ms total)
+TB668 308:821 Closed (0000ms, 0692ms total)

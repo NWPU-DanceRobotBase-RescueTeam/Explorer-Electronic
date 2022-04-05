@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: shen zu, zu, LIC=X96CK-ZKTZ2-X75RZ-JNCGL-0GQ9X-CB7UX
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\Rescuer\遥控器\小车\USER\LED.uvprojx
+Project File Date:  12/07/2020
+
+<h2>Output:</h2>
+Build target 'LED'
+compiling main.c...
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+compiling led.c...
+compiling adc.c...
+compiling tim.c...
+compiling key.c...
+compiling OLED.c...
+..\HARDWARE\OLED\OLED.c(52): warning:  #167-D: argument of type "s8 *" is incompatible with parameter of type "char *restrict"
+                sprintf(you, "%d ", iadcxleft);
+..\HARDWARE\OLED\OLED.c(53): warning:  #167-D: argument of type "s8 *" is incompatible with parameter of type "char *restrict"
+                sprintf(zuo, "%d ", 0);
+..\HARDWARE\OLED\OLED.c(57): warning:  #167-D: argument of type "s8 *" is incompatible with parameter of type "char *restrict"
+                sprintf(zuo, "%d ", -iadcxleft);
+..\HARDWARE\OLED\OLED.c(58): warning:  #167-D: argument of type "s8 *" is incompatible with parameter of type "char *restrict"
+                sprintf(you, "%d ", 0);
+..\HARDWARE\OLED\OLED.c(62): warning:  #167-D: argument of type "s8 *" is incompatible with parameter of type "char *restrict"
+                sprintf(qian, "%d ", iadcyright);
+..\HARDWARE\OLED\OLED.c(63): warning:  #167-D: argument of type "s8 *" is incompatible with parameter of type "char *restrict"
+                sprintf(hou, "%d ", 0);
+..\HARDWARE\OLED\OLED.c(67): warning:  #167-D: argument of type "s8 *" is incompatible with parameter of type "char *restrict"
+                sprintf(hou, "%d ", -iadcyright);
+..\HARDWARE\OLED\OLED.c(68): warning:  #167-D: argument of type "s8 *" is incompatible with parameter of type "char *restrict"
+                sprintf(qian, "%d ", 0);
+..\HARDWARE\OLED\OLED.c(83): warning:  #167-D: argument of type "s8 *" is incompatible with parameter of type "unsigned char *"
+        LCD_P8X16Str(5, 1, qian, WHITE, BLACK);
+..\HARDWARE\OLED\OLED.c(84): warning:  #167-D: argument of type "s8 *" is incompatible with parameter of type "unsigned char *"
+        LCD_P8X16Str(11, 1, hou, WHITE, BLACK);
+..\HARDWARE\OLED\OLED.c(85): warning:  #167-D: argument of type "s8 *" is incompatible with parameter of type "unsigned char *"
+        LCD_P8X16Str(5, 3, zuo, WHITE, BLACK);
+..\HARDWARE\OLED\OLED.c(86): warning:  #167-D: argument of type "s8 *" is incompatible with parameter of type "unsigned char *"
+        LCD_P8X16Str(11, 3, you, WHITE, BLACK);
+..\HARDWARE\OLED\OLED.c: 12 warnings, 0 errors
+compiling iwdg.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+assembling startup_stm32f40_41xxx.s...
+compiling misc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_can.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_iwdg.c...
+linking...
+Program Size: Code=7384 RO-data=424 RW-data=3168 ZI-data=1832  
+FromELF: creating hex file...
+"..\OBJ\LED.axf" - 0 Error(s), 12 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\Rescuer\遥控器\小车\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>

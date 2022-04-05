@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=VCC_24 Pin=P14-1
+Removed Pin From Net: NetName=VCC_24 Pin=P15-1
+Removed Pin From Net: NetName=VCC_24 Pin=P17-1
+Removed Pin From Net: NetName=VCC_24 Pin=U2-1
+Removed Pin From Net: NetName=VCC_24 Pin=U2-1
+Removed Pin From Net: NetName=VCC_24 Pin=U2-1
+Removed Pin From Net: NetName=VCC_24 Pin=U2-1
+Added Pin To Net: NetName=VCC_24O Pin=P14-1
+Added Pin To Net: NetName=VCC_24O Pin=P15-1
+Added Pin To Net: NetName=VCC_24O Pin=P17-1
+Added Pin To Net: NetName=VCC_24O Pin=U2-1
+Added Pin To Net: NetName=VCC_24O Pin=U2-1
+Added Pin To Net: NetName=VCC_24O Pin=U2-1
+Added Pin To Net: NetName=VCC_24O Pin=U2-1

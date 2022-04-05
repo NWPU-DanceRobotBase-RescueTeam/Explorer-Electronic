@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="CAN_TX_MAILBOX0"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="CAN_Tx_Mailboxes"/>
+			<item value="First_Flag"/>
+			<item value="CAN_RxPacketTypeDef "/>
+			<item value="HAL_CAN_Start"/>
+			<item value="CAN_filter_FIFO"/>
+			<item value="CAN_FILTERMODE_IDLIST"/>
+			<item value="CAN_filter_mode"/>
+			<item value="delay_ms"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+</section>

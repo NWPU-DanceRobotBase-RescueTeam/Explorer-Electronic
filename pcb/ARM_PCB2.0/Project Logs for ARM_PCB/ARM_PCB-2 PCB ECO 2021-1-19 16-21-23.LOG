@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=VCC_24O Pin=U2-1
+Removed Pin From Net: NetName=VCC_24O Pin=U2-1
+Removed Pin From Net: NetName=VCC_24O Pin=U2-1
+Removed Pin From Net: NetName=VCC_24O Pin=U2-1
+Change Component Footprint: Designator=P13 Old Footprint=XH2.54-WI-2P New Footprint=XH2.54-LI-2P
+Added Component: Designator=P17(XT30_ĸ)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=VCC_24 Pin=P17-1
+Added Pin To Net: NetName=PGND Pin=P17-2
+Added Pin To Net: NetName=VCC_24 Pin=U2-1
+Added Pin To Net: NetName=VCC_24 Pin=U2-1
+Added Pin To Net: NetName=VCC_24 Pin=U2-1
+Added Pin To Net: NetName=VCC_24 Pin=U2-1

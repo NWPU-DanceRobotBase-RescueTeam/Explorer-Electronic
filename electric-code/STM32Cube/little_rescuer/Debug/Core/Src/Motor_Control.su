@@ -1,0 +1,4 @@
+Motor_Control.c:12:6:Control_Initialize	16	static
+Motor_Control.c:51:6:Data_Convert	16	static
+Motor_Control.c:64:6:CAN_Send_Control_Value	8	static
+Motor_Control.c:97:6:Motor_Speed_Control	72	static

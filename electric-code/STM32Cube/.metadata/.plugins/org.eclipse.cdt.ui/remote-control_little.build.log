@@ -1,0 +1,10 @@
+12:12:21 **** Build of configuration Debug for project remote-control_little ****
+make -j12 all 
+arm-none-eabi-size   remote-control_little.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25900	   2636	   2132	  30668	   77cc	remote-control_little.elf
+Finished building: default.size.stdout
+ 
+
+12:12:21 Build Finished. 0 errors, 0 warnings. (took 230ms)
+

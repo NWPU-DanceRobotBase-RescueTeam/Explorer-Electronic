@@ -1,0 +1,7 @@
+sensor.c:11:6:Sonic_Trig	8	static
+sensor.c:18:6:HAL_GPIO_EXTI_Callback	24	static
+sensor.c:55:6:Flame_Calculate	16	static
+sensor.c:70:6:Rain_Calculate	16	static
+sensor.c:85:6:Infrare_Calculate	16	static
+sensor.c:102:6:Smoke_Calculate	16	static
+sensor.c:117:6:Light_Calculate	16	static
